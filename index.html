@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Toquero | Portafolio Desarrollo Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container header-content">
+        <div>
+            <h1>Jorge Toquero</h1>
+            <p class="subtitle">Desarrollador Web · DAW · ASIR</p>
+            <p class="summary">
+                Estudiante de Desarrollo de Aplicaciones Web con base sólida en sistemas (ASIR), 
+                programación en Java, PHP y bases de datos. Buscando aportar valor en 
+                proyectos de desarrollo backend y soporte técnico.
+            </p>
+            <div class="buttons">
+                <a href="https://github.com/JorgeToquero" target="_blank" class="btn">Ver GitHub</a>
+                <!-- Cuando tengas LinkedIn, cambias este enlace -->
+                <a href="#" class="btn btn-secondary">LinkedIn (próximamente)</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <!-- Sección habilidades -->
+    <section id="skills">
+        <h2>Habilidades técnicas</h2>
+        <div class="skills-grid">
+            <div class="chip">Java</div>
+            <div class="chip">PHP</div>
+            <div class="chip">MySQL</div>
+            <div class="chip">HTML &amp; CSS</div>
+            <div class="chip">JavaScript (iniciación)</div>
+            <div class="chip">Administración de sistemas (ASIR)</div>
+            <div class="chip">Git &amp; GitHub</div>
+        </div>
+    </section>
+
+    <!-- Sección proyectos -->
+    <section id="projects">
+        <h2>Proyectos destacados</h2>
+
+        <!-- Proyecto reservas peluquería -->
+        <article class="project-card">
+            <h3>Sistema de reservas para peluquería</h3>
+            <p class="project-tag">PHP · MySQL · HTML · CSS</p>
+            <p>
+                Aplicación web que permite gestionar reservas de citas para una peluquería: 
+                selección de tipo de corte, tinte, peinado y fecha.  
+                Incluye validación de disponibilidad en la base de datos y registro de reservas.
+            </p>
+            <ul class="project-list">
+                <li>Formulario de reserva con selección de servicios.</li>
+                <li>Comprobación de disponibilidad por fecha en MySQL.</li>
+                <li>Inserción de reservas en tabla <code>reservas</code>.</li>
+            </ul>
+            <!-- Cuando subas el proyecto real, cambia este enlace -->
+            <a href="https://github.com/JorgeToquero" target="_blank" class="project-link">
+                Ver código en GitHub
+            </a>
+        </article>
+
+        <!-- Proyecto placeholder 1 -->
+        <article class="project-card">
+            <h3>Formulario con validación (ejercicio DAW)</h3>
+            <p class="project-tag">HTML · CSS · JavaScript</p>
+            <p>
+                Ejercicio orientado a la validación de formularios en cliente (JavaScript), 
+                aplicando buenas prácticas en manejo de eventos y mensajes de error.
+            </p>
+            <a href="https://github.com/JorgeToquero" target="_blank" class="project-link">
+                Ver código en GitHub
+            </a>
+        </article>
+
+        <!-- Proyecto placeholder 2 -->
+        <article class="project-card">
+            <h3>Proyecto TPV (en desarrollo)</h3>
+            <p class="project-tag">Java / PHP · MySQL</p>
+            <p>
+                Idea de proyecto de TPV para pequeño negocio, con gestión de tickets y 
+                productos. Este proyecto está en fase de diseño y será ampliado en el futuro.
+            </p>
+        </article>
+    </section>
+
+    <!-- Sección contacto -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>
+            Actualmente abierto a oportunidades como desarrollador junior, técnico informático 
+            o roles relacionados con sistemas.
+        </p>
+        <p>
+            Puedes contactar conmigo en: 
+            <a href="mailto:tu_correo@ejemplo.com">JorgeToquero@live.com</a>
+            <!-- Sustituye por tu correo real -->
+        </p>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; <span id="year"></span> Jorge Toquero · Portafolio Desarrollo Web</p>
+    </div>
+</footer>
+
+<script>
+    // Año automático en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
