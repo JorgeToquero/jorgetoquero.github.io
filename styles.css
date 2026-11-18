@@ -625,3 +625,32 @@ h3 {
         transition: none !important;
     }
 }
+
+/* Capturas de proyectos con enlace para ampliarlas */
+.project-image-link {
+    display: block;
+    width: 180px;
+    margin-top: 4px;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.project-image-link .project-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    margin: 0;
+    object-fit: contain;
+    background: var(--surface);
+}
+
+.project-image-link:hover .project-image {
+    border-color: var(--green);
+}
+
+@media (max-width: 650px) {
+    .project-image-link {
+        grid-column: 2;
+        width: min(100%, 320px);
+    }
+}
