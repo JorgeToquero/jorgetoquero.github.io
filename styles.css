@@ -654,3 +654,47 @@ h3 {
         width: min(100%, 320px);
     }
 }
+/* Ejemplo de salida del juego por consola */
+.terminal-preview {
+    width: 180px;
+    min-width: 0;
+    margin-top: 4px;
+    overflow: hidden;
+    border: 1px solid #38583f;
+    border-radius: 9px;
+    background: #0b0e0b;
+}
+
+.terminal-preview figcaption {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    background: #1b281e;
+    color: var(--green);
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.terminal-preview pre {
+    padding: 12px;
+    overflow-x: auto;
+    color: #d5efda;
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    font-size: 0.65rem;
+    line-height: 1.65;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.terminal-preview code {
+    font: inherit;
+}
+
+@media (max-width: 650px) {
+    .terminal-preview {
+        grid-column: 2;
+        width: min(100%, 320px);
+    }
+}
